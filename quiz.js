@@ -49,15 +49,7 @@ function tienganh() {
     console.log(arr)
 }
 
-function hoctuvung(a,b) {
-    const arr = [
-        new Question(a, b)
-    ]
-    quizs.push(arr);
-    mon = "quizE"
-    console.log(arr)
-    console.log(quizs)
-}
+
 
 function createQaA() {
     let num1, num2;
@@ -140,26 +132,4 @@ document.getElementById("tienganh").addEventListener('click', () => {
 
 
 })
-
-// document.getElementById("tienganh1").addEventListener('click', () => {
-   
-//     console.log(quizs)
-//     console.log(mon)
-//     console.log(quizs[0])
-
-// })
-
-// document.querySelector(".create").addEventListener("click", event => {
-        
-
-// })
-
-// document.querySelector(".hoctuvung").addEventListener('click', () => {
-//     const cauhoi = document.querySelector(".cauhoi").value
-//     const dich = document.querySelector(".dich").value
-
-// hoctuvung(cauhoi,dich)
-// console.log(quizs)
-
-// })
 
