@@ -1,3 +1,10 @@
+<?php
+    
+	session_start();
+
+  ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,13 +15,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./haha.css">
 
 </head>
 
 <body>
     <div id="game">
         <div id="container">
+        <div id="info">
+    <form class="log" method="post" action="insert_data.php" onsubmit="return sendData();">
+        <p>Nhập họ tên</p>
+        <input type="text" name="name" id="name">
+        <p>Nhập số điện thoại</p>
+        <input type="text" name="phone" id="phone">
+        <button id="submit" type="submit">Xác nhận</button>
+    </form>
+</div>
+
+<script>
+function sendData() {
+    // Lấy giá trị từ các trường nhập liệu
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+
+    // Sử dụng XMLHttpRequest hoặc Fetch API để gửi dữ liệu đến server
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "insert_data.php", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.send("name=" + name + "&phone=" + phone);
+
+    // Ngăn chuyển hướng mặc định
+    return false;
+}
+
+document.getElementById("submit").addEventListener("click", function(event) {
+    
+document.getElementById("info").style.display = "none"
+ 
+});
+</script>
             <canvas id="canvas"></canvas>
             <div id="pickCharacter">
                 <div class="showCharacter">
@@ -29,6 +68,7 @@
                     
                     <div id="chonmonhoc"></div>
                     <button class="playButton">Vào game</button>
+                    
                 </div>
                 <div class="characters">
 

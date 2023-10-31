@@ -19,6 +19,7 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
+    
 }
 
 #canvas {
@@ -412,4 +413,21 @@ p {
     font-weight: 700;
     cursor: pointer;
     opacity: 0.7;
+}
+
+#info {
+    position: absolute;
+    background: red;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+
+
+}
+
+.log {
+    display: flex;
+    flex-direction: column;
 }
