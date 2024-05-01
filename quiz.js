@@ -1,4 +1,5 @@
-
+const arr1 =
+    { "động vật": [], }
 
 let quizs = [];
 let mon = "";
@@ -6,7 +7,7 @@ class Question {
     constructor(question, correctAnswer) {
         this.question = question;
         this.correctAnswer = correctAnswer;
-        if (correctAnswer !== undefined) { // Check if correctAnswer is defined
+        if (correctAnswer !== undefined) {
             this.generateContainer();
             this.totalAnswers();
         }
@@ -27,8 +28,8 @@ class Question {
 }
 
 function tienganh() {
-    
-    
+
+
 
     const arr = [
         new Question("sách", "book"),
@@ -86,7 +87,7 @@ function createQaA() {
         case '/':
             num1 = num2 * (Math.floor(Math.random() * 10) + 1)
             question = `${num1} : ${num2}`;
-            correctAnswer = (num1 / num2).toFixed(2);
+            correctAnswer = num1 / num2;
             break;
     }
 

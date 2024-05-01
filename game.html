@@ -1,10 +1,3 @@
-<?php
-    
-	session_start();
-
-  ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,41 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./haha.css">
+    <link rel="stylesheet" href="./style.css">
 
 </head>
 
 <body>
     <div id="game">
         <div id="container">
-        <div id="info">
-            <form action="" id="contactForm">
-                <div class="inputBox">
-                    <input type="text" id="name" placeholder="Tên" required>
-                </div>
-                <div class="inputBox">
-                    <input type="text" id="phone" placeholder="Số điện thoại" required>
-                </div>
-                <div class="inputBox">
-                    <input type="email" id="email" placeholder="Email" required>
-                </div>
-                <div class="inputBox">
-                    <input type="text" id="school" placeholder="Trường học" required>
-                </div>
-                <div class="inputBox">
-                    <input type="text" id="province" placeholder="Tỉnh" required>
-                </div>
-                <div class="inputBox">
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
-</div>
-
-
-
             <canvas id="canvas"></canvas>
             <div id="pickCharacter">
-               
                 <div class="showCharacter">
                     <img src="" alt="">
                 </div>
@@ -62,15 +29,11 @@
                     
                     <div id="chonmonhoc"></div>
                     <button class="playButton">Vào game</button>
-                    
                 </div>
                 <div class="characters">
-                  
-                    
 
                 </div>
-                </div>
-                 
+            </div>
             <!-- end game -->
             <div id="menu"></div>
             <div id="display">
@@ -106,12 +69,9 @@
     <script src="quiz.js"></script>
     <script src="chonnhanvat.js"></script>
     <script type="module" src="game.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-    <script src="firebase.js"></script>
 </body>
 
 </html>
 <style>
-
 
 </style>

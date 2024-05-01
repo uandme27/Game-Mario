@@ -18,10 +18,10 @@ const imgCharacter = [
 
 ]
 
-let kq =""
-for(let i = 0; i < imgCharacter.length; i++){
+let kq = ""
+for (let i = 0; i < imgCharacter.length; i++) {
     let html = `
-    <img class="character ${i == 0? "pick" : ""}" src="./character/${imgCharacter[i].character}" alt="" onclick="dichuyen(this)">
+    <img class="character ${i == 0 ? "pick" : ""}" src="./character/${imgCharacter[i].character}" alt="" onclick="dichuyen(this)">
     `
     kq += html
 }
