@@ -23,39 +23,33 @@
     <div id="game">
         <div id="container">
         <div id="info">
-    <form class="log" method="post" action="insert_data.php" onsubmit="return sendData();">
-        <p>Nhập họ tên</p>
-        <input type="text" name="name" id="name">
-        <p>Nhập số điện thoại</p>
-        <input type="text" name="phone" id="phone">
-        <button id="submit" type="submit">Xác nhận</button>
-    </form>
+            <form action="" id="contactForm">
+                <div class="inputBox">
+                    <input type="text" id="name" placeholder="Tên" required>
+                </div>
+                <div class="inputBox">
+                    <input type="text" id="phone" placeholder="Số điện thoại" required>
+                </div>
+                <div class="inputBox">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="inputBox">
+                    <input type="text" id="school" placeholder="Trường học" required>
+                </div>
+                <div class="inputBox">
+                    <input type="text" id="province" placeholder="Tỉnh" required>
+                </div>
+                <div class="inputBox">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
 </div>
 
-<script>
-function sendData() {
-    // Lấy giá trị từ các trường nhập liệu
-    var name = document.getElementById("name").value;
-    var phone = document.getElementById("phone").value;
 
-    // Sử dụng XMLHttpRequest hoặc Fetch API để gửi dữ liệu đến server
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "insert_data.php", true);
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.send("name=" + name + "&phone=" + phone);
 
-    // Ngăn chuyển hướng mặc định
-    return false;
-}
-
-document.getElementById("submit").addEventListener("click", function(event) {
-    
-document.getElementById("info").style.display = "none"
- 
-});
-</script>
             <canvas id="canvas"></canvas>
             <div id="pickCharacter">
+               
                 <div class="showCharacter">
                     <img src="" alt="">
                 </div>
@@ -71,9 +65,12 @@ document.getElementById("info").style.display = "none"
                     
                 </div>
                 <div class="characters">
+                  
+                    
 
                 </div>
-            </div>
+                </div>
+                 
             <!-- end game -->
             <div id="menu"></div>
             <div id="display">
@@ -109,9 +106,12 @@ document.getElementById("info").style.display = "none"
     <script src="quiz.js"></script>
     <script src="chonnhanvat.js"></script>
     <script type="module" src="game.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./firebase.js"></script>
 </body>
 
 </html>
 <style>
+
 
 </style>

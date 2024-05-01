@@ -15,10 +15,7 @@ const imgCharacter = [
         character: "astronaut.png",
         avt: "Aastronaut.jpg",
     },
-    {
-        character: "astronaut.png",
-        avt: "Aastronaut.jpg",
-    },
+
 ]
 
 let kq =""
