@@ -5,7 +5,7 @@ canvas.style.display = "none"
 const map = ["map2.jpg", "map3.jpg", "map4.jpg", "map5.jpg", "map6.jpg", "map7.jpg", "map8.jpg", "map9.jpg", "map10.jpg"]
 const randomIndex = Math.floor(Math.random() * map.length);
 const ctx = canvas.getContext('2d');
-canvas.style.backgroundImage = `url(/background/${map[randomIndex]})`
+canvas.style.backgroundImage = `url(./img/background/${map[randomIndex]})`
 
 const player = new Image();
 const key = new Image();
@@ -20,8 +20,8 @@ document.querySelector(".playButton").addEventListener('click', () => {
     let textMenu = ``
     let gameOver = false
 
-    key.src = '/character/princes1.png';
-    brickImage.src = '/brick1.png';
+    key.src = './img/character/princes1.png';
+    brickImage.src = './img/brick1.png';
 
 
 

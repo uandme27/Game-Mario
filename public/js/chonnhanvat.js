@@ -21,7 +21,7 @@ const imgCharacter = [
 let kq = ""
 for (let i = 0; i < imgCharacter.length; i++) {
     let html = `
-    <img class="character ${i == 0 ? "pick" : ""}" src="./character/${imgCharacter[i].character}" alt="" onclick="dichuyen(this)">
+    <img class="character ${i == 0 ? "pick" : ""}" src="./img/character/${imgCharacter[i].character}" alt="" onclick="dichuyen(this)">
     `
     kq += html
 }
@@ -40,7 +40,7 @@ function dichuyen(x) {
     const index = Array.from(characters).indexOf(x);
     console.log(index)
     x.classList.add('pick');
-    document.querySelector(".showCharacter img").style.backgroundImage = `url(./background/${imgCharacter[index].avt})`
+    document.querySelector(".showCharacter img").style.backgroundImage = `url(./img/background/${imgCharacter[index].avt})`
     var loadCharacter
     return loadCharacter = `${imgCharacter[index].character}`
 }

@@ -13,7 +13,7 @@ body {
 }
 
 #container {
-    background-image: url(./background/galaxy1.avif);
+    background-image: url(../img/background/galaxy1.avif);
     display: flex;
     justify-content: center;
     position: relative;
@@ -75,7 +75,7 @@ body {
 }
 
 .showCharacter img {
-    background-image: url(./background/Amario.jpg);
+    background-image: url(../img/background/Amario.jpg);
     width: 100%;
     background-position: center;
     background-size: 100% 100%;
@@ -135,7 +135,7 @@ body {
 #menu {
     width: 600px;
     height: 660px;
-    background-image: url(./background/menu.png);
+    background-image: url(../img/background/menu.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -189,7 +189,7 @@ p {
     width: 250px;
     height: 500px;
     position: absolute;
-    background-image: url(./background/display.png);
+    background-image: url(../img/background/display.png);
     background-repeat: no-repeat;
     background-size: 100% 60%;
     right: 0;
@@ -331,7 +331,7 @@ p {
 #guidee {
     width: 70%;
     height: 100%;
-    background-image: url(./background/guide.png);
+    background-image: url(../img/background/guide.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
